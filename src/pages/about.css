@@ -1,0 +1,57 @@
+.about{
+    display:flex;
+}
+.contactMe{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width:100%;
+    height:655px;
+}
+.contactTitle{
+    width:100%;
+}
+.contactTitle h1{
+    margin:50px auto;
+    text-align:center;
+    border-top:3px double #333;
+    border-bottom:3px double #333;
+    width:250px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+}
+.contactContent{
+    background:url('../../public/images/contact.png') no-repeat center top;
+    display:flex;
+    justify-content:space-evenly;
+    margin:30px auto;
+    margin-top:0;
+    padding:90px;
+    width:647px;;
+    height:477px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.contactContent img{
+    display:block;
+    width:100px;
+    height:100px;
+}
+/* .contactText{
+} */
+.contactText h1{
+    text-shadow:1.5px 1.5px rgba(255,255,255,.7);
+    margin-top:70px;
+}
+.contactText h2{
+    text-shadow:1px 1px rgba(255,255,255,.7);
+    font-weight:400;
+    line-height:35px;
+    border-bottom:2px dotted #333;
+    padding-bottom:2px;
+    margin:15px 0;
+}
+.aboutMeContent{
+    width:100%;
+}

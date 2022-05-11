@@ -1,0 +1,83 @@
+.sidebar{
+    flex:3;
+    margin:20px;
+    padding-bottom:30px;
+    background-color:#fdfdfd;
+    border-radius:10px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.sidebarItem{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:315px; /* 얘한테 width를 줘야 자식들의 너비(80%)가 일정해진다. */
+}
+.sidebarTitle{
+    margin:10px;
+    padding:5px;
+    width:80%;
+    border-top:1px solid #a7a4a4;
+    border-bottom:1px solid #a7a4a4;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+}
+.sidebar img{
+    width:100%;
+    height:400px;
+    object-fit: cover;
+    /* object-position: ; */
+    margin-top:15px;
+    /* border-radius:10px;
+    border:1px solid #a7a4a4; */
+}
+.sidebar p{
+    font-size:13px;
+    padding:10px 0 30px;
+}
+.sidebarList{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    padding:0;
+    margin:0;
+    margin-bottom:30px;
+}
+.sidebarListItem{
+    width:50%;;
+    padding-left:35px;
+    line-height:35px;
+    font-weight:600;
+    cursor:pointer;
+}
+.tagList{
+    margin-top:10px;
+    margin-bottom: 30px;
+    width:80%; 
+    padding-left:10px;
+    padding-right:10px;
+    word-break:break-all;
+}
+.tagListItem::before{
+    content:"#";
+}
+.tagListItem{
+    font-size:13px;
+    color:#666;
+    cursor:pointer;
+    margin-right:10px;
+}
+.socialList{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:315px;
+}
+.socialItem{
+    font-size:17px;
+    margin:10px 20px;
+    cursor:pointer;
+}
