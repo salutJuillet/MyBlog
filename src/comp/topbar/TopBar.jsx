@@ -1,8 +1,10 @@
 import './topbar.css'
 import { Link } from 'react-router-dom';
 
-export default function TopBar() {
-  const user = false;
+export default function TopBar({isLoggedIn, setIsLoggedIn}) {
+  const handleUserState = () => setIsLoggedIn(!isLoggedIn);
+
+  
   return (
     <div className="top">
         <div className="container topInn">
@@ -20,9 +22,9 @@ export default function TopBar() {
                     <li className="topListItem"><Link to="/write">write</Link></li>
                     <li className="topListItem">
                       {
-                        user? ("LOGOUT") : 
+                        isLoggedIn? <Link to="/" onClick={handleUserState}>signout</Link> : 
                         (<span>
-                          <Link to="/Login">LOGIN</Link>
+                          <Link to="/login">signin</Link>
                           {/* <Link to="/Settings" >SIGNUP</Link> */}
                         </span>)
                       }
@@ -30,7 +32,9 @@ export default function TopBar() {
               </ul>
             </div>
            <div className="topRight">
-                <img src="images/me01.jpg" alt="치즈" className="topImg" />
+            {
+              isLoggedIn ? <img src="images/myprofile.jpg" alt="치즈" className="topImg" /> : ''
+            }
                <i className="topSearchIcon fas fa-search"></i>
            </div>
         </div>

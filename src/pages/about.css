@@ -25,7 +25,8 @@
 .contactContent{
     background:url('../../public/images/contact.png') no-repeat center top;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    align-items: center;
     margin:30px auto;
     margin-top:0;
     padding:90px;
@@ -35,14 +36,16 @@
 }
 .contactContent img{
     display:block;
-    width:100px;
-    height:100px;
+    width:170px;
+    height:170px;
+    border-radius:50%;
 }
 /* .contactText{
 } */
 .contactText h1{
     text-shadow:1.5px 1.5px rgba(255,255,255,.7);
-    margin-top:70px;
+    /* background:rgba(255,255,255,0.35); */
+    position:relative;
 }
 .contactText h2{
     text-shadow:1px 1px rgba(255,255,255,.7);
@@ -51,7 +54,18 @@
     border-bottom:2px dotted #333;
     padding-bottom:2px;
     margin:15px 0;
+    /* background:rgba(255,255,255,0.35); */
+    position:relative;
 }
+/* .contactText h1::after, .contactText h2::after{
+    content:'';
+    width:100%;
+    height:50%;
+    background:rgba(255,255,255,0.35);
+    display:block;
+    position:absolute;
+    top:25px;
+} */
 .aboutMeContent{
     width:100%;
 }

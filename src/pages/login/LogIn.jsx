@@ -3,7 +3,9 @@ import Header from '../../comp/header/Header';
 import { Link } from 'react-router-dom';
 
 
-export default function LogIn() {
+export default function LogIn({setIsLoggedIn}) {
+  const handleLogin = () => setIsLoggedIn(true)
+
   return (
     <div className="login">
         <Header />
@@ -20,10 +22,10 @@ export default function LogIn() {
               </div>
 
               <div className="btnBox">
-                <button type="submit" className="submit-btn">sign in</button>
+                <button type="submit" className="submit-btn" onClick={handleLogin}>sign in</button>
               </div>
             </form>
-            <h4 className="signup">Don't have an account? <Link to="/Settings">Sign up</Link></h4>
+            <h4 className="signup">Don't have an account? <Link to="/settings">Sign up</Link></h4>
         </div>
     </div>
   )

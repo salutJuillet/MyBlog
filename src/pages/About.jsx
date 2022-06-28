@@ -14,11 +14,11 @@ export default function About() {
                 </div>
                 
                 <div className="contactContent">
-                  <img src="images/me01.jpg" alt="me" />
+                  <img src="images/myprofile.jpg" alt="me" />
                   <div className="contactText">
                     <h1>Juillet</h1>
                     <h2>salut.juilllet@gmail.com</h2>
-                    <h2>여기엔 뭐를 쓰지</h2>
+                    <h2>신입</h2>
                   </div>
                 </div>
                 <div className="aboutMeContent">

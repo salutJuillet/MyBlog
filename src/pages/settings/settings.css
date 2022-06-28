@@ -49,6 +49,10 @@
 .fa-paperclip{
     font-size:35px;
     text-shadow:1px 1px rgba(0,0,0,.4);
+    cursor:pointer;
+}
+input[type=file]{
+    display:none;
 }
 .userInfo label{
     display:block;

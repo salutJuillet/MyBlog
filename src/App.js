@@ -9,15 +9,16 @@ import LogIn from './pages/login/LogIn';
 import {
   BrowserRouter,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+import { useState } from 'react';
 
 function App() {
-  const user = false; /* 로그인이 안된 상태로 선언 */
+  const [isLoggedIn, setIsLoggedIn] = useState(false); /* 로그인이 안된 상태로 선언 */
+
   return (
     <BrowserRouter>
-      <TopBar />
+      <TopBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 
       <Routes >
         <Route path="/" element={<Home />} />
@@ -26,8 +27,8 @@ function App() {
         <Route path="/detail/*" element={<Detail />} />
         <Route path="/write/*" element={<Write />} />
         {/* <Route path="/write/*" element={(user=='juillet') ? <Write /> : <Home />} /> */}
-        <Route path="/settings/*" element={user ? <Home /> : <Settings />} />
-        <Route path="/login/*" element={user ? <Home /> : <LogIn />} />
+        <Route path="/settings/*" element={isLoggedIn ? <Home /> : <Settings setIsLoggedIn={setIsLoggedIn} />} />
+        <Route path="/login/*" element={isLoggedIn ? <Home /> : <LogIn setIsLoggedIn={setIsLoggedIn} />} />
       </Routes>
       
     </BrowserRouter>

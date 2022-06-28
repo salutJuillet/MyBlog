@@ -1,7 +1,9 @@
 import './settings.css'
 import Header from '../../comp/header/Header';
 
-export default function Settings() {
+export default function Settings({setIsLoggedIn}) {
+  const handleLogin = () => setIsLoggedIn(true)
+
   return (
     <div className="settings">
         <Header />
@@ -10,11 +12,12 @@ export default function Settings() {
         <div className="settingsBox">
             <form className="settingsForm">
               <div className="fileAttach">
-                <div className="fileAttachImg"><img src="images/file attachment.jpg" alt="file attach" />
+                <div className="fileAttachImg"><img src="images/file_attachment.jpg" alt="file attach" />
                     {/* <a href="https://www.flaticon.com/kr/free-icons/-" title="생강 빵 아이콘">생강 빵 아이콘  제작자: Freepik - Flaticon</a> */}
                 </div>
                 <label htmlFor="fileInput">
                   <i className="fa-solid fa-paperclip"></i>
+                  <input type="file" accept="image/*" />
                 </label>
                 <input type="file" id="fileInput" style={{display:"none"}} />
               </div>
@@ -26,7 +29,7 @@ export default function Settings() {
                 </div>
 
                 <div className="btnBox">
-                  <button type="submit" className="submit-btn">submit</button>
+                  <button type="submit" className="submit-btn" onClick={handleLogin}>submit</button>
                 </div>
             </form>
         </div>
