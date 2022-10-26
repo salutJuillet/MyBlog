@@ -7,13 +7,7 @@
 <!-- ABOUT THE PROJECT -->
 # My Blog
 
-<div align="center">
-  <img src="public/images/MyBlog-preview-01.png" width="300px"/>
-  <img src="public/images/MyBlog-preview-04.png" width="300px"/>
-  <img src="public/images/MyBlog-preview-05.png" width="300px"/>
-  <img src="public/images/MyBlog-preview-02.png" width="300px"/>
-  <img src="public/images/MyBlog-preview-03.png" width="300px"/>
-</div>
+
 
 This is my very first ReactJS Blog full of my favorite things. Please have a look!
 <br/><br/>
