@@ -87,5 +87,4 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[snake-game-preview]: images/preview.gif
 [React-url]: https://reactjs.org/
