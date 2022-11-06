@@ -11,9 +11,10 @@
   <img src="public/images/MyBlog-preview-01.png" width="250px"/>
   <img src="public/images/MyBlog-preview-04.png" width="250px"/>
   <img src="public/images/MyBlog-preview-05.png" width="250px"/>
-  <img src="public/images/MyBlog-preview-02.png" width="250px"/>
-  <img src="public/images/MyBlog-preview-03.png" width="250px"/>
-</div>
+  <img src="public/images/MyBlog-preview-02.png" width="375px"/>
+  <img src="public/images/MyBlog-preview-03.png" width="375px"/> <br/>
+  <a href="https://youtu.be/tJjy4iyWZDk" target="_blank">https://youtu.be/tJjy4iyWZDk</a>
+</div> <br/><br/>
 
 This is my very first ReactJS Blog full of my favorite things. Please have a look!
 <br/><br/>
